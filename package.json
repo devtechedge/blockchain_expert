@@ -1,0 +1,25 @@
+{
+  "name": "blockchain-expert",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Argus — agentic smart-contract security copilot",
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test src/lib/argus/scan.test.ts",
+    "scan": "node --experimental-strip-types src/cli.ts"
+  },
+  "dependencies": {
+    "next": "^15.5.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.16.5",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "typescript": "^5.7.0"
+  }
+}
