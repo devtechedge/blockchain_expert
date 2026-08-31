@@ -138,3 +138,53 @@ button:disabled { opacity: 0.4; cursor: default; }
   .actions { width: 100%; }
   .actions .btn { flex: 1; }
 }
+
+/* Overlay hover-reveal scrollbars on every page and overflow pane.
+   Hidden until the pointer is over that scrolling region; native overlay
+   behaviour is left alone on touch (no hover). */
+@media (hover: hover) and (pointer: fine) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  *:hover,
+  *:focus,
+  *:focus-within {
+    scrollbar-color: color-mix(in oklab, var(--fg) 32%, transparent) transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-track,
+  *::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  *:hover::-webkit-scrollbar-thumb,
+  *:focus::-webkit-scrollbar-thumb,
+  *:focus-within::-webkit-scrollbar-thumb {
+    background-color: color-mix(in oklab, var(--fg) 32%, transparent);
+  }
+
+  *:hover::-webkit-scrollbar-thumb:hover {
+    background-color: color-mix(in oklab, var(--fg) 52%, transparent);
+  }
+}
