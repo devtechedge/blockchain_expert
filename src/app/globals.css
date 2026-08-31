@@ -148,9 +148,9 @@ button:disabled { opacity: 0.4; cursor: default; }
     scrollbar-color: transparent transparent;
   }
 
-  *:hover,
-  *:focus,
-  *:focus-within {
+  *:not(html):not(body):hover,
+  *:not(html):not(body):focus,
+  *:not(html):not(body):focus-within {
     scrollbar-color: color-mix(in oklab, var(--fg) 32%, transparent) transparent;
   }
 
@@ -178,13 +178,13 @@ button:disabled { opacity: 0.4; cursor: default; }
     background-clip: padding-box;
   }
 
-  *:hover::-webkit-scrollbar-thumb,
-  *:focus::-webkit-scrollbar-thumb,
-  *:focus-within::-webkit-scrollbar-thumb {
+  *:not(html):not(body):hover::-webkit-scrollbar-thumb,
+  *:not(html):not(body):focus::-webkit-scrollbar-thumb,
+  *:not(html):not(body):focus-within::-webkit-scrollbar-thumb {
     background-color: color-mix(in oklab, var(--fg) 32%, transparent);
   }
 
-  *:hover::-webkit-scrollbar-thumb:hover {
+  *:not(html):not(body):hover::-webkit-scrollbar-thumb:hover {
     background-color: color-mix(in oklab, var(--fg) 52%, transparent);
   }
 }
