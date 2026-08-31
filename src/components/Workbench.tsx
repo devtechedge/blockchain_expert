@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { runDeterministicPipeline } from "@/lib/argus/agent.ts";
 import { MCP_TOOLS } from "@/lib/argus/mcp-tools.ts";
 import { countBySeverity, toMarkdown } from "@/lib/argus/report.ts";
@@ -75,6 +76,7 @@ export function Workbench() {
           <button type="button" className="btn secondary" onClick={scan}>
             Static scan
           </button>
+          <ThemeToggle />
         </div>
       </header>
 
