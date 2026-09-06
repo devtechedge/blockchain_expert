@@ -1,5 +1,7 @@
 # Security
 
+**Date:** 2026-09-06  
+
 Argus is a **defensive, offline static-analysis assistant**. It is designed for educational review and for auditors who want a deterministic first pass over Solidity source. It is not a professional audit, not an authorization to deploy, and not an offering of any token or service.
 
 ## What this repository is
@@ -29,3 +31,15 @@ Argus is a **defensive, offline static-analysis assistant**. It is designed for 
 If you find a vulnerability in Argus itself (the analyzer, the workbench, or CI), open a private GitHub security advisory on this repository. Do not file a public issue with a working proof against a live protocol.
 
 Please do **not** send reports that amount to “this educational fixture is unsafe if deployed.” That is the point of the fixture, and every sample file says so in its header.
+
+## Repository visibility
+
+This repository is currently **public** for portfolio review. When the open-source
+build story is no longer needed, **the GitHub repo will go private**. Making the
+repo private reduces source disclosure; it does **not** replace strong production
+secrets, auth allow-lists, webhook signatures, or Vercel/Actions environment
+hygiene. Rotate any credential that was pasted into chat, tickets, or screenshots.
+
+## Residual risk
+
+See executive summary above. Portfolio/demo residual risk is accepted for the public Vercel/Pages deploy; do not treat this as a multi-tenant production security boundary.
