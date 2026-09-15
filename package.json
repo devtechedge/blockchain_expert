@@ -2,7 +2,7 @@
   "name": "blockchain-expert",
   "version": "0.1.0",
   "private": true,
-  "description": "Argus — agentic smart-contract security copilot",
+  "description": "Argus - agentic smart-contract security copilot",
   "scripts": {
     "dev": "next dev --port 3000",
     "build": "next build",

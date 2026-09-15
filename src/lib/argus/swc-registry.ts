@@ -3,7 +3,7 @@ import type { SwcEntry } from "./types.ts";
 /**
  * Curated SWC registry subset used as the retrieval corpus.
  * Source of truth for titles: Smart Contract Weakness Classification (SWC).
- * This is a defensive knowledge base — not an offensive playbook.
+ * This is a defensive knowledge base - not an offensive playbook.
  */
 export const SWC_REGISTRY: SwcEntry[] = [
   {

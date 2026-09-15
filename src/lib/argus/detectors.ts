@@ -398,7 +398,7 @@ export function defaultVerdict(draft: Draft): { verdict: ReviewVerdict; note: st
     return { verdict: "confirmed", note: "High-confidence deterministic match against a classic SWC pattern." };
   }
   if (draft.confidence < 0.7) {
-    return { verdict: "needs_human_review", note: "Heuristic match — confirm against surrounding control flow." };
+    return { verdict: "needs_human_review", note: "Heuristic match - confirm against surrounding control flow." };
   }
   return { verdict: "needs_human_review", note: "Pattern matched; reviewer should confirm context." };
 }

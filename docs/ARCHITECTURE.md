@@ -24,9 +24,9 @@ Optional LLM review is a refinement of **existing** findings. It cannot invent n
 
 ## MCP tools
 
-- `static_scan` — run the analyzer
-- `lookup_swc` — fetch an SWC entry by id
-- `retrieve_swc` — TF-IDF retrieve against the registry
+- `static_scan` - run the analyzer
+- `lookup_swc` - fetch an SWC entry by id
+- `retrieve_swc` - TF-IDF retrieve against the registry
 
 No tool opens an RPC connection or signs a transaction.
 

@@ -14,7 +14,7 @@ Agentic smart-contract security copilot: deterministic static analysis, SWC-mapp
 
 **https://argus-copilot.vercel.app**
 
-> **Status:** Vercel demo-mode. The analyzer, SWC retrieval, MCP tool host, and HITL board run in the browser. No API key. No chain RPC. Educational fixtures only — do not deploy the samples.
+> **Status:** Vercel demo-mode. The analyzer, SWC retrieval, MCP tool host, and HITL board run in the browser. No API key. No chain RPC. Educational fixtures only - do not deploy the samples.
 
 ---
 
@@ -55,7 +55,7 @@ This is a defensive review aid, not a professional audit and not a chain client.
 | Tools | JSON-RPC 2.0 subset (MCP-shaped, read-only) |
 | Data | Educational Solidity fixtures in-repo |
 | Hosting | Vercel demo-mode (client-side analyzer) |
-| CI | GitHub Actions — `npm ci`, unit tests, typecheck. No RPC. |
+| CI | GitHub Actions - `npm ci`, unit tests, typecheck. No RPC. |
 
 ---
 

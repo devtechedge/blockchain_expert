@@ -90,7 +90,7 @@ export function Workbench() {
                 </button>
               ))}
             </div>
-            <p className="hint">{sample.blurb} Educational fixtures only — do not deploy.</p>
+            <p className="hint">{sample.blurb} Educational fixtures only - do not deploy.</p>
             <div className="grid">
               <aside className="panel">
                 <h2>Pipeline</h2>
@@ -196,7 +196,7 @@ function FindingsPane({
   if (!run) {
     return (
       <div className="panel">
-        <p className="hint">Run a static scan to populate findings. The analyzer is local — no node, no keys.</p>
+        <p className="hint">Run a static scan to populate findings. The analyzer is local - no node, no keys.</p>
       </div>
     );
   }
