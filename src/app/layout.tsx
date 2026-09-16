@@ -16,11 +16,13 @@ export const metadata: Metadata = {
     description: PAGE_DESCRIPTION,
     url: SITE_URL,
     type: "website",
+    images: [{ url: 'https://argus-copilot.vercel.app/og.png', width: 1200, height: 630, alt: 'ARGUS' }],
   },
   twitter: {
-    card: "summary",
+    card: 'summary_large_image',
     title: PAGE_TITLE,
     description: PAGE_DESCRIPTION,
+    images: ['https://argus-copilot.vercel.app/og.png'],
   },
   icons: { icon: "/favicon.svg" },
 };
