@@ -2,10 +2,26 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 
+const PAGE_TITLE = "ARGUS";
+const PAGE_DESCRIPTION =
+  "Argus is an agentic smart-contract security copilot: deterministic static analysis, SWC retrieval, and human-in-the-loop triage.";
+const SITE_URL = "https://argus-copilot.vercel.app";
+
 export const metadata: Metadata = {
-  title: "ARGUS",
-  description:
-    "Argus is an agentic smart-contract security copilot: deterministic static analysis, SWC retrieval, and human-in-the-loop triage.",
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  // Shared links (LinkedIn, Slack, email) render a bare URL without these.
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    url: SITE_URL,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+  },
   icons: { icon: "/favicon.svg" },
 };
 
